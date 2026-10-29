@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Réservations | BAKUS SteakHouse</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="concept-notice">
+  Concept indépendant — site non officiel
+</div>
+
+<header class="site-header">
+  <a href="index.html" class="logo">
+    BAKUS<span>STEAKHOUSE</span>
+  </a>
+
+  <button class="menu-toggle" aria-label="Ouvrir le menu"
+    aria-expanded="false">☰</button>
+
+  <nav class="nav-links">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="story.html">Notre histoire</a>
+    <a href="gallery.html">Galerie</a>
+    <a href="reservations.html" class="nav-cta active">Réserver</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <p class="eyebrow">VOTRE MOMENT BAKUS</p>
+    <h1>Réservez une <span>table.</span></h1>
+    <p>Préparez votre prochaine expérience culinaire.</p>
+  </section>
+
+  <section class="reservation-section section-padding">
+
+    <div class="reservation-info">
+      <p class="eyebrow">UNE TABLE VOUS ATTEND</p>
+      <h2>Partagez un bon moment.</h2>
+
+      <p>
+        Utilisez le formulaire pour préparer une demande
+        de réservation. Dans ce concept de démonstration,
+        votre demande sera préparée dans WhatsApp.
+      </p>
+
+      <div class="reservation-detail">
+        <span>01</span>
+        <div>
+          <h3>Choisissez votre date</h3>
+          <p>Indiquez la date souhaitée.</p>
+        </div>
+      </div>
+
+      <div class="reservation-detail">
+        <span>02</span>
+        <div>
+          <h3>Précisez vos besoins</h3>
+          <p>Nombre de personnes et heure souhaitée.</p>
+        </div>
+      </div>
+
+      <div class="reservation-detail">
+        <span>03</span>
+        <div>
+          <h3>Envoyez votre demande</h3>
+          <p>La réservation reste à confirmer par le restaurant.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="reservation-form-wrapper">
+      <form id="reservation-form">
+
+        <h2>Demande de réservation</h2>
+
+        <label for="guest-name">Nom complet</label>
+        <input type="text" id="guest-name"
+          placeholder="Votre nom" required>
+
+        <label for="guest-email">Adresse e-mail</label>
+        <input type="email" id="guest-email"
+          placeholder="votre@email.com" required>
+
+        <div class="form-row">
+          <div>
+            <label for="guest-date">Date</label>
+            <input type="date" id="guest-date" required>
+          </div>
+
+          <div>
+            <label for="guest-time">Heure souhaitée</label>
+            <input type="time" id="guest-time" required>
+          </div>
+        </div>
+
+        <label for="guest-count">Nombre de personnes</label>
+        <select id="guest-count" required>
+          <option value="">Choisir</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+          <option>6</option>
+          <option>7</option>
+          <option>8</option>
+        </select>
+
+        <label for="guest-message">Message (facultatif)</label>
+        <textarea id="guest-message" rows="4"
+          placeholder="Une demande particulière ?"></textarea>
+
+        <button type="submit" class="btn btn-gold form-button">
+          Préparer ma demande
+        </button>
+
+        <p class="form-notice">
+          Démonstration uniquement. Aucune réservation
+          n'est confirmée automatiquement.
+        </p>
+
+        <p id="reservation-status" role="status"></p>
+
+      </form>
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a href="index.html" class="logo">
+    BAKUS<span>STEAKHOUSE</span>
+  </a>
+
+  <p>Concept indépendant de redesign — non officiel.</p>
+
+  <div class="footer-links">
+    <a href="index.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="story.html">Notre histoire</a>
+    <a href="gallery.html">Galerie</a>
+    <a href="reservations.html">Réserver</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <p class="developer-credit">Concept réalisé par Jeyyy · Web Developer</p>
+
+  <a class="developer-whatsapp"
+     href="https://wa.me/2347035960615"
+     target="_blank" rel="noopener noreferrer">
+    Contacter le développeur sur WhatsApp
+  </a>
+
+  <p class="copyright">© 2026 — Concept de démonstration indépendant</p>
+</footer>
+
+</body>
+</html>
